@@ -32,6 +32,8 @@ int main(void)
 
 #include "led.h"
 
+#include "beep.h"
+
 #include "stm32f4xx.h"
 
 #include "delay.h"
@@ -40,11 +42,15 @@ int main(void)
 {
 	delay_init(168);
 
-	LED_Init();
+//	LED_Init();
+	
+	BEEP_Init();
 	
 		
 	while(1)
 	{
+	
+	//led
 //		GPIO_SetBits(GPIOF,GPIO_Pin_9);
 		
 //		delay_ms(500);
@@ -58,6 +64,17 @@ int main(void)
 //		delay_ms(1000);
 		
 //		GPIO_ResetBits(GPIOF,GPIO_Pin_9 | GPIO_Pin_10);
+
+
+		//·äÃùÆ÷
+
+//		GPIO_SetBits(GPIOF, GPIO_Pin_8);
+//		
+//		delay_ms(500);
+//		
+//		GPIO_ResetBits(GPIOF, GPIO_Pin_8);
+//		
+//		delay_ms(500);
 
 	}
 }

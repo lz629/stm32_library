@@ -1,5 +1,6 @@
 ..\obj\main.o: main.c
 ..\obj\main.o: ..\HARDWARE\LED\led.h
+..\obj\main.o: ..\HARDWARE\BEEP\beep.h
 ..\obj\main.o: stm32f4xx.h
 ..\obj\main.o: ..\CORE\core_cm4.h
 ..\obj\main.o: G:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
